@@ -1,0 +1,13 @@
+<package>
+  <description brief="wifi_tools">
+     wifi_tools is for wifi site survey, wifi localization, and wifi mapping.
+  </description>
+  <author>Seigo ITO</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/wifi_tools</url>
+  <depend package="roscpp"/>
+  <depend package="rospy"/>
+</package>
+
+
