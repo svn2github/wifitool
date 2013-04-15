@@ -160,7 +160,7 @@ bool WifiStumbler::stumble()
         //ROS_INFO("command=IWEVQUAL");
         if (event.u.qual.level != 0 || (event.u.qual.updated & (IW_QUAL_DBM | IW_QUAL_RCPI)))
         {
-          //ap.noise = event.u.qual.noise;
+          ap.noise = event.u.qual.noise;
           ap.ss    = event.u.qual.level;
         }
       }
