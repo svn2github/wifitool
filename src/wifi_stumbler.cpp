@@ -171,6 +171,7 @@ bool WifiStumbler::stumble()
         char mac_buff[1024];
         iw_ether_ntop((const struct ether_addr *)&event.u.ap_addr.sa_data,mac_buff);
         ap.mac_address = std::string(mac_buff);
+        ROS_INFO("mac_addr=%s",mac_buff);
       }
       else if(event.cmd == SIOCGIWESSID)
       {
