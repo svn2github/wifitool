@@ -8,6 +8,8 @@
   <url>http://ros.org/wiki/wifi_tools</url>
   <depend package="roscpp"/>
   <depend package="rospy"/>
+  <depend package="pcl"/>
+  <depend package="pcl_ros"/>
 </package>
 
 
