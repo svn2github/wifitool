@@ -29,3 +29,9 @@ rosbuild_add_boost_directories()
 rosbuild_add_executable(wifi_stumbler src/wifi_stumbler_node.cpp src/wifi_stumbler.cpp)
 target_link_libraries(wifi_stumbler iw)
 
+rosbuild_add_executable(wifi_mapping src/wifi_mapping_node.cpp)
+rosbuild_link_boost(wifi_mapping signals)
+
+rosbuild_add_executable(wifi_view src/wifi_view_node.cpp)
+rosbuild_link_boost(wifi_view filesystem system)
+
