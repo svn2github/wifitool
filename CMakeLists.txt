@@ -32,6 +32,9 @@ target_link_libraries(wifi_stumbler iw)
 rosbuild_add_executable(wifi_mapping src/wifi_mapping_node.cpp)
 rosbuild_link_boost(wifi_mapping signals)
 
-rosbuild_add_executable(wifi_view src/wifi_view_node.cpp)
-rosbuild_link_boost(wifi_view filesystem system)
+#rosbuild_add_executable(wifi_view src/wifi_view_node.cpp)
+#rosbuild_link_boost(wifi_view filesystem system)
+
+rosbuild_add_executable(wifi_gaussian_process src/wifi_gpmap_node.cpp)
+rosbuild_link_boost(wifi_gaussian_process filesystem system)
 
